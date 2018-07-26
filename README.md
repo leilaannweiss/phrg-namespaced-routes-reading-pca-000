@@ -82,11 +82,13 @@ When you create a new folder under `/controllers`, Rails will automatically pick
 ```ruby
 # controllers/admin/stats_controller.rb
 
-class Admin::StatsController < ApplicationController
-  def index
+module Admin
+  class StatsController < ApplicationController
+    def index
 
-    ...
+      ...
 
+    end
   end
 end
 ```
